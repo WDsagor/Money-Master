@@ -1,17 +1,13 @@
 
+// Expenses calculate & value update
 document.getElementById('costCal').addEventListener("click", function(){
     const incomeAmout = document.getElementById('incomeValue');
     const totalIncomeAmout = parseInt(incomeAmout.value);
-
-
-    // const totalIncomeAmout = convertValue('incomeValue');
     const toatalFoodCost = convertValue('foodCost');
     const totalRentCost = convertValue('rentCost');
     const totalClothCost = convertValue('clothCost');
 
-    //    const totalExenses = toatalFoodCost + totalRentCost + totalClothCost;
-
-    
+    // Error HTMLHeading
     if(toatalFoodCost>=0 && totalRentCost>= 0 && totalClothCost>=0){
         const totalExenses = toatalFoodCost + totalRentCost + totalClothCost;
         const balance = totalIncomeAmout - totalExenses;
@@ -30,11 +26,13 @@ document.getElementById('costCal').addEventListener("click", function(){
     }
 });
 
+// Save Deposit & value update
 document.getElementById("saveBtn").addEventListener('click', function(){
     const incomeAmout = document.getElementById('incomeValue');
     const totalIncomeAmout = parseInt(incomeAmout.value);
     const saveParsent = convertValue('saveParsent');
     const saveAmount = totalIncomeAmout*(saveParsent/100);
+    // Error HTMLHeading
     if(saveAmount>0 ){
         const balanceAmount = document.getElementById('balance').innerText
         const convertAmount = parseInt(balanceAmount)
@@ -51,9 +49,7 @@ document.getElementById("saveBtn").addEventListener('click', function(){
     }
     
 })
-
-
-
+// Value Convert Function
 function convertValue (inputId){
     const selectId = document.getElementById(inputId);
     const convert = parseInt(selectId.value);
