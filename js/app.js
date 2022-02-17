@@ -12,8 +12,8 @@ document.getElementById('costCal').addEventListener("click", function(){
         const totalExenses = toatalFoodCost + totalRentCost + totalClothCost;
         const balance = totalIncomeAmout - totalExenses;
         const expenses = document.getElementById('totalExenses');
-        expenses.innerText = totalExenses;
         if(totalIncomeAmout >= totalExenses){
+            expenses.innerText = totalExenses;
             document.getElementById('balance').innerText = balance;
             document.getElementById('remainBalance').innerText = balance;
         }
