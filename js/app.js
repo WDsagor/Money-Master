@@ -47,7 +47,6 @@ document.getElementById("saveBtn").addEventListener('click', function(){
     else{
         alert("Please input possetive value in Save")
     }
-    
 })
 // Value Convert Function
 function convertValue (inputId){
