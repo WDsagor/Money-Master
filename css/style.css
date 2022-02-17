@@ -1,0 +1,30 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+.bg-img {
+  background-image: url(../images/money-women.webp);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+input {
+  background-color: rgb(197, 197, 197);
+  padding: 5px 10px;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  padding: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+.save-input {
+  width: 100px;
+}
